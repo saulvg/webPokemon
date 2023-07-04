@@ -1,0 +1,62 @@
+#main-nav ul {
+    display: flex;
+    max-width: max-content;
+}
+
+#main-nav li {
+    list-style: none;
+}
+
+#main-nav li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 7rem;
+    height: 3rem;
+
+
+}
+
+#main-nav li>a:hover {
+    background-color: var(--hoverMainColor);
+}
+
+
+
+.link {
+    transition: 0.8s ease;
+}
+
+/* Animals */
+.link-animals::after {
+    content: 'Pokemons';
+
+}
+
+.link-animals:hover::after {
+    color: aliceblue;
+    content: 'Animals';
+}
+
+/* Vehicles */
+.link-vehicles::after {
+    content: 'Bike shop';
+
+}
+
+.link-vehicles:hover::after {
+    color: aliceblue;
+    content: 'Vehicles';
+}
+
+/* Products */
+.link-products:hover::after {
+    color: aliceblue;
+    content: 'Products';
+}
+
+.link-products::after {
+    content: 'Items Bag';
+
+}

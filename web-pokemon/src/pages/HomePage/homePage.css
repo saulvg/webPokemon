@@ -1,0 +1,39 @@
+#section-home-page {
+    flex: 1;
+    background-image: url("/public//media/img/imgHomePage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#container-home-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page-title {
+    font-size: 3rem;
+    color: rgb(245, 245, 107);
+}
+
+#home-page-sub-title {
+    font-size: 4rem;
+    color: rgb(255, 255, 101);
+}
+
+
+
+.initial-show {
+    opacity: 0;
+}
+
+.initial-show.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}

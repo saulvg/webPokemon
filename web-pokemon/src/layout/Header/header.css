@@ -1,0 +1,26 @@
+#main-header {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#main-header a {
+    text-decoration: none;
+}
+
+#btn-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-account a {
+    border: 1px solid var(--generalBlack);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+#btn-account a:hover {
+    background-color: var(--hoverMainColor)
+}

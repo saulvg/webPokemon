@@ -1,0 +1,86 @@
+#section-not-found {
+    flex-grow: 1;
+
+
+}
+
+#container-error-message {
+    background-color: rgb(212, 255, 241);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid var(--generalBlack);
+
+
+
+}
+
+#error-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#error-404 span {
+    margin: 0 .8rem;
+    font-size: 12rem;
+    font-weight: 900;
+    color: rgba(26, 26, 26, 0.849);
+}
+
+
+/* ## Poke-Ball ## */
+
+/* ** Generic poke-ball ** */
+.styles-pok-ball1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.styles-pok-ball2 {
+    border: 3px solid var(--generalBlack);
+    border-radius: 50%;
+}
+
+/* ** Details poke-ball ** */
+.container-pok-ball {
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    background-color: var(--mainColor);
+}
+
+.color-pok-ball {
+    height: 50%;
+    width: 100%;
+    border-radius: 0 0 100px 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.mid-pok-ball {
+    width: 100%;
+    border: 3px solid var(--generalBlack);
+}
+
+.btn-pok-ball {
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    z-index: 2;
+}
+
+.details-btn-pok-ball {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(199, 199, 199);
+
+}

@@ -1,0 +1,212 @@
+/* ## Reset ## */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ## Variables ## */
+
+* {
+  --mainColor: #F19393;
+  --hoverMainColor: #c97a7a;
+  --generalBlack: rgb(43, 43, 43);
+  --generalBlackAlpha: rgba(43, 43, 43, 0.781);
+}
+
+/* ## App ## */
+#container-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#container-body-app {
+  flex: 1;
+  margin: 2rem;
+  /*  Le decimos que sea flex porque necesitamos que en not-found ocupe el 100% de la página,
+  así en esa sección le decimos que tenga un flex: 1, lo que provoca que crezca según el tamaño que tenga.
+  Igual que hemos hecho con este hijo y su padre #container-app para dejar el footer siempre abajo, haciendo que el contendor de la web ocupe 100vh y el hijo todo el espacio que pueda dentro de el*/
+  display: flex;
+}
+
+/* ## General ## */
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+label {
+  color: var(--generalBlack)
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.shh {
+  display: none;
+}
+
+/* ** Lists ** */
+
+.section-title {
+  margin: 1rem 0;
+}
+
+.shadows-cards {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadows-cards:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.lista-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.lista-container>a {
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid rgb(43, 43, 43);
+  width: 25rem;
+  height: 25rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.title-card {
+  margin: .5rem auto 1rem .5rem;
+}
+
+.body-card {
+  padding: .5rem;
+  display: grid;
+  /* grid-template: auto; */
+}
+
+.body-card p {
+  line-height: 1.5rem;
+}
+
+.card-img {
+
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-card {
+  margin-right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: transform .5s;
+}
+
+.btn-card:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.btn-card-edit {
+  background-image: url('/public/media/icon/editar.png');
+}
+
+.btn-card-delete {
+  background-image: url('/public/media/icon/borrar.png');
+}
+
+/* ** ModalForm ** */
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  margin: 1rem;
+  gap: 1.5rem;
+}
+
+.modal-form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+.modal-form input {
+  font-size: 1.2rem;
+  width: 100%;
+
+}
+
+.modal-form textarea {
+  font-size: 1.2rem;
+  width: 100%;
+  resize: none;
+}
+
+/* ** AddItem ** */
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--generalBlackAlpha);
+  color: var(--mainColor);
+  font-size: 3rem;
+  border-radius: 10px;
+  transition: transform .5s;
+}
+
+
+.add-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
